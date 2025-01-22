@@ -1,26 +1,27 @@
-Differentially Private Geodesic Regression
+#Differentially Private Geodesic Regression
 
 This repository provides Python code for performing geodesic regression on a unit sphere with differential privacy. It includes methods to compute the footpoint and shooting vector, generate replicates using Markov Chain Monte Carlo (MCMC), and validate the results against theoretical bounds.
 
-Features
+##Features:
 
-Geodesic Regression
+##Geodesic Regression
 
 Computes the footpoint and shooting vector for given input data.
 
 Normalizes points to lie on the unit sphere.
 
-Differential Privacy
+##Differential Privacy
 
 Adds noise to the footpoint and shooting vector to ensure differential privacy.
 
-Uses the Laplace mechanism to perturb values based on a user-specified privacy parameter (epsilon).
+Uses the K-Norm Gradient mechanism to perturb values based on a user-specified privacy parameter (epsilon).
 
-MCMC Sampling
+##MCMC Sampling
 
 Generates replicates of the footpoint and shooting vector using a theoretically proven acceptance probability.
+The acceptance probability is removed from the code as the paper is yet to be published.
 
-Validation and Visualization
+##Validation and Visualization
 
 Generates histograms to visualize the distances between the true values and the noisy replicates.
 
